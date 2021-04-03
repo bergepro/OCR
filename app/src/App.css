@@ -1,77 +1,44 @@
-html {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 100%;
-}
-
 .app {
     display:flex;
-    flex-direction: row;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
-    margin:auto;
-    padding: 50px 20px;
-    text-align: center;
-}
-.tekst__felt{
-    padding:40px;
-}
-
-.tekst__felt:hover{
-    color: rgb(255,199,199);
-}
-
-.input__side {
-    color: rgb(107,79,91);
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-}
-
-.input__side:hover {
-    cursor:pointer;
-    color:rgb(255,199,199)
-}
-
-.MuiSvgIcon-root{
-    color:rgb(107,79,91);
-}
-
-.MuiSvgIcon-root:hover{
-    color: rgb(255,199,199);
-}
-
-.button {
-    font-size:larger;
-    display:flex;
-    align-self: center;
-}
-
-.button > .MuiSvgIcon-root {
-    font-size:100px;
+    height: 100vh;
+    
 }
 
 .logo {
-    cursor:pointer;
-    display:flex;
+   max-width: 50%;
+}
+.logo img {
+    width: 100%;
+    
+ }
+
+.tekst__felt {
+    width: 100%;
+}
+.input__side {
+    color: rgb(107,79,91);
+    max-height: 80%;
+    max-width: 80%;
+    
 }
 
-.logo:hover {
-    cursor:pointer;
-}
+
+
+
+
+
 
 /* bakgrunn er 222,222,222 fra index.css */
 
 @media only screen and (max-width: 800px) {
-    html {
-        transform:scale(0.6)
+    img {
+        
     }
 
     .app {
-        justify-content:start;
+        justify-content:center;
         flex-direction: column-reverse;
     }
 

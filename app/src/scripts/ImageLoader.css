@@ -1,0 +1,104 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centered {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: #DEDEDE;
+    max-width: 99%;
+    box-shadow: 0px 5px 17px -7px rgba(97,69,81,1);
+    border-radius: 10px;
+    padding: 1rem;
+    max-height: 100%;
+    margin-top: 2px;
+}
+.uploadPictureContainer {
+    max-width: 100%;
+    height: auto;
+    background:#DEDEDE;
+    
+}
+.fileContainer .uploadPictureContainer {
+    max-width: 10%;
+    height: auto;
+    background:#DEDEDE;
+    
+    
+}
+.fileContainer .deleteImage {
+    background:#DEDEDE;
+    color:rgb(97,69,81);
+}
+
+button {
+    max-width: 99%;
+    
+}
+.fileContainer {
+    background: #DEDEDE
+}
+.chooseFileButton {
+    background:rgb(107,79,91);
+}
+
+
+
+.fileContainer > .chooseFileButton {
+    background: rgb(107,79,91);
+    
+}
+.fileContainer > .chooseFileButton {
+    background: rgb(107,79,91);
+    margin:1rem;
+    padding:1rem;
+}
+.fileContainer > p {
+    font-size:medium;
+    margin-bottom: 1rem;
+}
+
+.fileContainer  {
+    box-shadow: none;
+    
+}
+.fileContainer .chooseFileButton:hover{
+    background: rgb(107,79,91);
+    transform: scale(1.1);
+}
+.ocr-button {
+    padding:1rem;
+    color: white;
+    background: rgb(107,79,91);
+    border-radius: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    transition: 0.2s linear;
+    margin-bottom: 2rem;
+    
+}
+.ocr-button:hover {
+    transform: scale(1.1);
+}
+
+
+.ocr-list {
+    
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 1rem;
+    list-style-type: none;
+    
+    
+    
+}
+
+.ocr-element {
+    color: rgb(107,79,91);
+   
+    
+
+}

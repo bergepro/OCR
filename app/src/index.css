@@ -2,4 +2,11 @@
     /* Fjerner skjulte marginer */
     margin: 0;
     background-color: rgb(222,222,222);
+    cursor:default;
+    font-family: Arial, Helvetica, sans-serif;
+       
   }
+  .chooseFileButton {
+    background:rgb(107,79,91);
+}
+
