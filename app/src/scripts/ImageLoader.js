@@ -3,7 +3,6 @@ import ImageUploader from 'react-images-upload';
 import ClipLoader from "react-spinners/ClipLoader";
 import Tesseract from "tesseract.js";
 import "./ImageLoader.css";
-
 // https://stackoverflow.com/questions/48851807/how-to-get-jpg-image-from-heic-format-in-react-native 
 // ^ kanskje detta du ser itte.
 
@@ -11,17 +10,21 @@ function ImageLoader() {
     const [picUrl, setPicUrl] = useState([]); 
     const [ocrText, setOcrText] = useState([]); 
     const [isLoading, setIsLoading] = useState(false); 
+
+    
+    
     
     const onDrop = (_, pictureURL) => {
         setPicUrl(pictureURL);
         console.log("picurl: " + picUrl);
         console.log("pictureURL: " + pictureURL);
-        
     };
+    
+    
     
     const runOcr = () => {
         picUrl.forEach((picture) =>
-         Tesseract.recognize(picture, "eng").then(({ data: { text } }) => {
+         Tesseract.recognize(picture, "eng", "nor").then(({ data: { text } }) => {
              setOcrText((oldarray) => [...oldarray, text]);
          })
         );
@@ -37,7 +40,10 @@ function ImageLoader() {
                 buttonText="Last opp fil(er)."
                 onChange={onDrop}
                 background="#6B4F9B"
-                imgExtension={[".jpg", ".jpeg", ".gif", ".png", ".gif"]}
+                maxFileSize={5242880}
+                fileSizeError="File too big..."
+                fileTypeError="Wrong filetype..."
+                imgExtension={[".jpg", ".gif", ".png", ".gif"]}
             />
 
 

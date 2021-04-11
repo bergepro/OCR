@@ -2,10 +2,7 @@ import './App.css';
 import React from "react";
 import ImageLoader from "./scripts/ImageLoader.js";
 import logo from "./logo.png";
-
 function App() {
-
-
   return (
     <div className="app">
       <div className="logo">
