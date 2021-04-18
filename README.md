@@ -8,3 +8,5 @@ Produktet blir/er resultat av oppgave i Praktisk prosjektarbeid ved 2 semester B
 Bygget på ny 1.april - kun med react.
 
 Testing og konvertering av HEIC bilder gjenstår.
+
+https://pro-ocr.web.app
