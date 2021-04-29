@@ -5,9 +5,9 @@ Proocr is a mobile-first web application that scans images for text, converting 
 
 ## Installation
 
-git clone https://github.com/bergepro/OCR.git
 
 ```bash
+git clone https://github.com/bergepro/OCR.git
 npm install --save
 ```
 
