@@ -1,12 +1,24 @@
-# OCR
-OCR Webløsning med opplasting
+# PROOCR
 
-Valgt å begynne på ny 8 mars 00:30, etter å ha lært nye ting, og for å friske opp.
+Proocr is a mobile-first web application that scans images for text, converting it to plain text
 
-Produktet blir/er resultat av oppgave i Praktisk prosjektarbeid ved 2 semester Bachelor i IT og Informasjonssystemer ved USN.
 
-Bygget på ny 1.april - kun med react.
+## Installation
 
-Testing og konvertering av HEIC bilder gjenstår.
+git clone https://github.com/bergepro/OCR.git
 
-https://pro-ocr.web.app
+```bash
+npm install --save
+```
+
+
+
+## Libraries
+This application uses: 
+ImageUploader from 'react-images-upload',
+ClipLoader from "react-spinners/ClipLoader",
+Tesseract from "tesseract.js",
+
+## Website
+
+https://pro-ocr.web.app/

@@ -98,7 +98,11 @@ button {
 
 .ocr-element {
     color: rgb(107,79,91);
-   
+
+}
+.ocr-element button{
+    color: rgb(107,79,91);
+    font-weight: bold;
     
 
 }

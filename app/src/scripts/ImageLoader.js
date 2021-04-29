@@ -31,6 +31,7 @@ function ImageLoader() {
         
         setIsLoading(true);
     };
+    
     return (
         <div className="centered">
             <ImageUploader 
@@ -43,7 +44,7 @@ function ImageLoader() {
                 maxFileSize={5242880}
                 fileSizeError="File too big..."
                 fileTypeError="Wrong filetype..."
-                imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+                imgExtension={[".jpg", ".gif", ".png"]}
             />
 
 
@@ -54,8 +55,15 @@ function ImageLoader() {
                 <ul className="ocr-list">
                     {ocrText.map((ot) => (
                         <li className="ocr-element" key={ocrText.indexOf(ot)}>
-                            {ocrText.indexOf(ot) + 1}-) 
+                            {ocrText.indexOf(ot) + 1}) 
+                            <br/>
                             {ot}
+                            <br/>
+                            
+                            <button onClick={() => {navigator.clipboard.writeText(ot)}}>
+                                <div id="knapp__tekst">Kopier</div>
+                            </button>
+                            <br/>
                         </li>
                     ))}
                 </ul>
