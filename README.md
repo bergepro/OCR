@@ -25,4 +25,4 @@ https://pro-ocr.web.app/
 
 ## Usage locally
 
-Navigate to the installed folder -> npm start
+Navigate to the installed folder "app" -> npm start
