@@ -22,3 +22,7 @@ Tesseract from "tesseract.js",
 ## Website
 
 https://pro-ocr.web.app/
+
+## Usage locally
+
+Navigate to the installed folder -> npm start
